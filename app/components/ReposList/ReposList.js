@@ -18,9 +18,10 @@ const ReposList = ({ loading, error, repos }) => {
     return <List component={ErrorComponent} />;
   }
 
-  if (repos !== false) {
-    return <List items={repos} component={RepoListItem} />;
-  }
+
+
+
+  console.log(repos, "in reposlist")
 
   return null;
 };

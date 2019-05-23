@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './style.scss';
+import defaultDataLoader from '../../utils/defaultDataLoader'
+
 
 const List = ({ component, items }) => {
   const ComponentToRender = component;

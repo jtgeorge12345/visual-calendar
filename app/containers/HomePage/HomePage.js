@@ -9,12 +9,14 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import ReposList from 'components/ReposList';
 import './style.scss';
+import defaultDataLoader from '../../utils/defaultDataLoader'
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   /**
    * when initial state username is not null, submit the form to load repos
    */
   componentDidMount() {
+
     const { username, onSubmitForm } = this.props;
     if (username && username.trim().length > 0) {
       onSubmitForm();
@@ -30,6 +32,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
       error,
       repos
     };
+    const defaultData = defaultDataLoader()
 
     return (
       <article>
@@ -59,7 +62,7 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
                 />
               </label>
             </form>
-            <ReposList {...reposListProps} />
+            <ReposList loading={reposListProps.loading} error={reposListProps.error} repos={defaultData} />
           </section>
         </div>
       </article>

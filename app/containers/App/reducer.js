@@ -31,6 +31,7 @@ const initialState = fromJS({
 function appReducer(state = initialState, action) {
   switch (action.type) {
     case LOAD_REPOS:
+      console.log('load repos')
       return state
         .set('loading', true)
         .set('error', false)

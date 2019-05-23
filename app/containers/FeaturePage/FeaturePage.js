@@ -38,10 +38,7 @@ export default class FeaturePage extends React.Component {
           <li>
             <p className="title">Instant feedback</p>
             <p>
-              Enjoy the best DX and code your app at the speed of thought! Your
-              saved changes to the CSS and JS are reflected instantaneously
-              without refreshing the page. Preserve application state even when
-              you update something in the underlying code!
+              TEST
             </p>
           </li>
           <li>

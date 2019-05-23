@@ -3,8 +3,10 @@ import './style.scss';
 
 const Footer = () => (
   <footer>
-    <section>This project is licensed under the MIT license.</section>
-    <section>Made with <span role="img" aria-label="heart-emoji">❤️</span> by <a href="https://twitter.com/flexdinesh">Dinesh Pandiyan</a></section>
+    <p>This project is licensed under the MIT license.</p>
+    <p>Made by Jason George using the <a href="https://github.com/flexdinesh/react-redux-boilerplate">React-Redux-Boilerplate </a>
+         by flexdinesh
+    </p>
   </footer>
 );
 

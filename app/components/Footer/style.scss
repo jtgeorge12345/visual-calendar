@@ -1,14 +1,14 @@
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 3em 0;
-  border-top: 1px solid #666;
+  // display: flex;
+  // justify-content: space-evenly;
+  border-top: 1px solid #ddd;
+  font-size: .8rem;
 
   a {
-    color: #41addd;
-  
+    color: #8FD379;
+
     &:hover {
-      color: #6cc0e5;
+      color: #0C5749;
     }
   }
 }
